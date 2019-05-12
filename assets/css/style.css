@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.clearfix::after{
+
+  content: "";
+  display: block;
+  clear: both;
+  }
+  ol, ul {
+      list-style: none;
+}
+
+h2 {
+  color: black;
+  font-weight: 700;
+  font-size: 15pt;
+}
+
+.header {
+  position: fixed;
+  text-decoration: none;
+  top: 0;
+  margin-left: 48px;
+  transition: margin-left .5s;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  height: 35px;
+  line-height: 8px;
+}
+
+
+/* Left sideBar */
+.leftSidebar {
+  height: 100%;
+  width: 48px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: .5s;
+}
+
+.leftSidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.leftSidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+.menubtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -68px;
+}
+
+
+.menubtn:hover {
+  background-color: #444;
+}
+/* end Left sideBar */
+/* Right sideBar */
+
+#rightSidebar {
+  position: fixed;
+  height: 100%;
+  width: 30px;
+  z-index: 1;
+  background-color: white;
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  padding: 0 12px;
+}
+
+.rightSidebar {
+
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  height: 100%;
+}
+.linkedin,
+.faceBook {
+  height: 25px;
+  width: 25px;
+
+}
+
+
+/* end Right sideBar */
+/* Main content */
+#main {
+  margin-top: 30px;
+  margin-left: 48px;
+  margin-right: 35px;
+  transition: margin-left .5s;
+}
+
+
+
+/* About */
+
+.about {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.about h2 {
+  width: 100%;
+  display: block;
+}
+
+.right {
+  width: 60%;
+  float: left;
+}
+.left {
+  width: 40%;
+  float: left;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about img{
+  margin: 5% 0;
+  width: 40%;
+
+}
+
+
+/* parallax */
+#parallax1 {
+  background-color: #ff5851;
+  background-attachment: fixed;
+}
+#parallax2 {
+  background-color: #f8f8f8;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.parallax {
+  height: 650px;
+}
+
+
+
+/* End Main Content */
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  height: 35px;
+}
+/* End Footer */
+
+/* Mobile Responsiveness */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
